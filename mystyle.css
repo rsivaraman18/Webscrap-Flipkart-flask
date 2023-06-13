@@ -1,0 +1,156 @@
+body{
+    background-color: rgb(220, 240, 240);
+    background-image: url('../static/mob4.jpg');
+}
+
+.title{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: italic;
+    line-height: 7px;
+}
+
+.msg{
+    align-items: center;
+    text-align: center;
+    color: rgb(35, 2, 114);
+    font-size: large;
+     
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 22%;
+    box-shadow: 0 0 4px 3px black;
+    padding: 1.5em;
+    margin-bottom: 2em; 
+    background-image: url('../static/mob8.jpg');
+    background-size: cover;   
+    border-radius: 10px;
+}
+
+.name{
+    text-align: center;
+    color: rgb(22, 106, 175);
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 4px;
+    margin-top: 4px;    
+}
+
+.under{
+    border-top: 4px dashed rgb(22, 106, 175);
+}
+.under2{
+    border-top: 2px dashed rgb(22, 106, 175);
+}
+
+
+.rating{
+    color: rgb(219, 5, 105);
+    font-size: 28px;
+    font-weight: bolder;  
+}
+
+.price{
+    color: rgb(219, 5, 105);
+    font-size: 28px;
+    font-weight: bolder;
+    margin-left: 75px;  
+}
+
+.storage{
+    margin-top: 5px;
+    color:rgb(36, 36, 247);
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.tab{
+    margin-left: 40px;
+}
+
+.size{
+    font-size: 18px !important;
+
+}
+.size,.pbattery,.pprocessor,.pwarranty{
+    color:rgb(36, 36, 247);
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.pcamera{ 
+    margin: auto;
+    color:rgb(48, 36, 45);
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: rgb(43, 154, 228);
+    color: white;
+    font-size: 24px;
+    margin-left: 65px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+/* **************************** home Page */
+
+
+.box{
+    box-shadow: 5px 5px 5px 5px;
+    margin-left: 400px;
+    padding: 10px;
+    width: fit-content;
+    font-size: 26px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+
+input{
+    font-weight: 700;
+    font-size: 26px;
+    margin: 10px 10px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+
+#searchbtn{
+    font-weight: bolder;  
+    margin: 20px 0px 20px 200px;
+}
+
+
+.filter{
+    margin: bottom 40px;;
+    color: brown;
+    font-weight: 240px;
+    margin-left: 50px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+}
+
+.homebtn{   
+    background-color: rgb(214, 49, 131);
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    line-height: 90px;
+}
