@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> View page </title>
+    <link rel="stylesheet" href="../static/mystyle.css">
+</head>
+<body>
+
+    <div class="title">
+        <h1>Siva Creation's</h1>
+        <h3>Web Scrapping</h3>
+        <hr class="under">
+    </div>
+
+    <div class="msg">
+        <h2>Item You searched : {{u}}</h2>
+        <h2>Search Result: {{tot}} items found</h2>
+        <a href="/" class="homebtn">Home </a>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+    <div class="cards">
+        {% for res in cdata %}
+        <div class="card">
+            <div class="prod-name">
+                <h4 class="name"> {{res['name']}} </h4>
+                <hr class="under">
+            </div>
+            
+            <div class="rate-price">
+                <span class="rating">Star {{res['rate']}}</span>
+                <span class="price">Rs {{res['price']}} </span>
+    
+            </div>
+
+            <div class="storage">
+                <span class="ram"> {{res['ram']}} </span> 
+                <span class="tab"></span>
+                <span class="rom">{{res['rom']}}</span> <br>
+                <span class="mem">{{res['mem']}}</span>
+            </div>
+
+            <div class="psize">
+                <p class="size"> {{res['size']}}</p>
+            </div>
+            
+            <div class="pcamera">
+                <p class="bcamera"> {{res['bcam']}} </p>
+                <p class="fcamera">{{res['fcam']}} </p>
+                <hr class="under2">
+            </div>
+
+            <div class="pbattery">
+                <p class="battery">{{res['bat']}}</p>
+            </div>
+
+            <div class="pprocessor">
+                <p class="processor"> {{res['pro']}}</p>
+            </div>
+
+            <div class="pwarranty">
+                <p class="waranty"> {{res['war']}}</p>
+            </div>
+            <a href="" class="btn">Place Order</a>
+            
+        </div>
+        {% endfor %}
+        
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
